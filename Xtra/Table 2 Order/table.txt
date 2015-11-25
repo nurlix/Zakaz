@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/tview"
+    android:layout_height="wrap_content"
+    android:layout_width="130dp"
+    android:layout_margin="5dp"
+    android:clickable="true"
+    android:background="@drawable/gray_background">
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:id="@+id/tableHeader"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:background="#55AA55">
+
+        <TextView
+            android:id="@+id/table_name"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_column="0"
+            android:layout_span="2"
+            android:textColor="#f3f3f3"
+            android:layout_gravity="center_horizontal"/>
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal">
+
+        <TextView
+            android:id="@+id/wname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_column="0"
+            android:layout_span="2"
+            android:textColor="#3677c0"
+            android:layout_gravity="center_horizontal" />
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/time_row"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:visibility="invisible">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_column="0"
+            android:text="Время :  "
+            android:textColor="#ff252525"
+            android:layout_weight="0.0"
+            android:layout_gravity="right" />
+
+        <TextView
+            android:id="@+id/time_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_column="1"
+            android:textColor="#7c7c7c"
+            android:layout_gravity="left" />
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/guest_row"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:visibility="invisible">
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_column="0"
+            android:text="Гости :  "
+            android:textColor="#ff252525"
+            android:layout_gravity="right" />
+
+        <TextView
+            android:id="@+id/guest_count"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_column="1"
+            android:textColor="#7c7c7c"
+            android:layout_gravity="left" />
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/total_row"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:visibility="invisible">
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="0"
+            android:text="Сумма :  "
+            android:textColor="#ff252525" />
+
+        <TextView
+            android:id="@+id/totalAmount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_column="1"
+            android:textColor="#7c7c7c"
+            android:layout_gravity="left" />
+
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical|center_horizontal">
+
+    </TableRow>
+
+</TableLayout>

@@ -1,0 +1,13 @@
+<resources>
+    <style name="button">
+        <item name="android:gravity">center_vertical|center_horizontal</item>
+        <item name="android:textColor">#ff454545</item>
+        <item name="android:color">#ffbad2e8</item>
+        <item name="android:colorBackground">#ffbad2e8</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:background">@drawable/button</item>
+        <item name="android:clickable">true</item>
+    </style>
+    <color name="pressed_color">#4d90fe</color>
+    <color name="default_color">#ffffff</color>
+</resources>

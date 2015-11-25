@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ulutsoft.cafe.android.MenuLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/white"
+        android:orientation="vertical">
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="..."
+            android:id="@+id/btnBack" />
+
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/picklist" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ffffff"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/txtOrderTitle"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@android:color/white"
+            android:gravity="center_vertical|center_horizontal" />
+
+        <ListView
+            android:id="@+id/orderItemList"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <Button
+            android:id="@+id/btnAddItem"
+            android:layout_width="match_parent"
+            android:layout_marginTop="30dp"
+            android:layout_height="80dp"
+            android:onClick="toggleMenu"
+            android:text="Добавить"/>
+
+    </LinearLayout>
+</com.ulutsoft.cafe.android.MenuLayout>

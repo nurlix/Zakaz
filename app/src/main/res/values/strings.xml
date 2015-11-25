@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">Simple POS</string>
+    <string name="title_activity_tables">Список заказов</string>
+    <string name="table">"Стол "</string>
+    <string name="title_activity_order">Заказ</string>
+    <string name="som">" сом"</string>
+    <string name="txt_TakeOrder">Принять заказ</string>
+    <string name="title_activity_login">Вход</string>
+    <string name="title_activity_users">Пользователи</string>
+    <string name="action_setGuests">Количество гостей</string>
+    <string name="btnCancel">Отмена</string>
+    <string name="title_activity_numpad">NumpadActivity</string>
+    <string name="print_receipt">Печать</string>
+    <string name="close_order">Закрыть стол</string>
+    <string name="move">Пересадить</string>
+    <string name="qry_loadOrderItem">SELECT odl.id, odl.orderid, odl.item, i.item as name, odl.quantity, odl.price FROM orders odr left join orderdetails odl on odr.id = odl.OrderID left join items i on i.id = odl.item where odr.id = %1$d</string>
+    <string name="qry_loadMenu">select * from vwitems order by category desc</string>
+    <string name="qry_loadUsers">select id, name, password from waitress where isFolder = 0</string>
+    <string name="qry_loadOrder">select odr.id, DATE_FORMAT(odr.OrderDate,\'%%H:%%i\') as orderdate, odr.guests, odr.waiter, odr.ordertable, r.Name as room, odr.status from orders odr left join waitress w on odr.waiter = w.id LEFT JOIN rooms r ON odr.OrderRoom = r.ID where odr.status = 0 and odr.Waiter =  %1$d order by odr.OrderTable</string>
+    <string name="title_activity_new_order">NewOrder</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+
+</resources>
