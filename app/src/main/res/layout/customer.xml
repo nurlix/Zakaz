@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:paddingLeft="10dp"
+    android:layout_width="match_parent"
+    android:layout_height="60dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/CustomerName"
+        android:text="Customer"
+        android:gravity="center_vertical"
+        android:textStyle="bold"
+        android:textColor="#285976" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/CustomerPhone"
+        android:text="Phone"
+        android:gravity="center_vertical"
+        android:textColor="#868484" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/CustomerAdres"
+        android:text="Adres"
+        android:gravity="center_vertical"
+        android:textColor="#868484" />
+
+</LinearLayout>

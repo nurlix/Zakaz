@@ -1,29 +1,43 @@
 <TableLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="fill_parent"
-    android:layout_height="fill_parent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
     android:layout_margin="15dp"
-    android:gravity="center">
+    android:gravity="center|top">
+
+    <TableRow
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#c7bbbb"
+        android:layout_gravity="center_horizontal">
+
+        <TextView
+            android:id="@+id/Title"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_column="1"
+            android:layout_span="3"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:gravity="center_vertical|center_horizontal" />
+
+    </TableRow>
 
     <TableRow
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:gravity="center_vertical|center_horizontal"
-        android:background="#c7bbbb">
+        android:background="#c7bbbb"
+        android:layout_gravity="center_horizontal">
 
         <TextView
             android:id="@+id/ResultText"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="30dp"
             android:layout_column="1"
             android:layout_span="3"
-            android:focusable="false"
-            android:focusableInTouchMode="false"
-            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textAppearance="?android:attr/textAppearanceSmall"
             android:textStyle="bold"
-            android:textSize="30sp"
-            android:layout_gravity="center_horizontal"
-            android:autoText="false" />
+            android:gravity="center_vertical|center_horizontal" />
+
     </TableRow>
 
     <TableRow
@@ -38,7 +52,7 @@
             android:layout_column="1"
             android:text="1"
             android:textStyle="bold"
-            android:textSize="30dp" />
+            android:textSize="20dp" />
 
         <Button
             android:id="@+id/button2"
@@ -47,7 +61,7 @@
             android:layout_column="2"
             android:text="2"
             android:textStyle="bold"
-            android:textSize="30dp" />
+            android:textSize="20dp" />
 
         <Button
             android:id="@+id/button3"
@@ -56,7 +70,7 @@
             android:layout_column="3"
             android:text="3"
             android:textStyle="bold"
-            android:textSize="30dp" />
+            android:textSize="20dp" />
     </TableRow>
 
     <TableRow
@@ -71,7 +85,7 @@
             android:layout_column="1"
             android:text="4"
             android:textStyle="bold"
-            android:textSize="30dp" />
+            android:textSize="20dp" />
 
         <Button
             android:id="@+id/button5"
@@ -80,7 +94,7 @@
             android:layout_column="2"
             android:text="5"
             android:textStyle="bold"
-            android:textSize="30dp" />
+            android:textSize="20dp" />
 
         <Button
             android:id="@+id/button6"
@@ -89,7 +103,7 @@
             android:layout_column="3"
             android:text="6"
             android:textStyle="bold"
-            android:textSize="30dp" />
+            android:textSize="20dp" />
     </TableRow>
 
     <TableRow
@@ -104,7 +118,7 @@
             android:layout_column="1"
             android:text="7"
             android:textStyle="bold"
-            android:textSize="30dp" />
+            android:textSize="20dp" />
 
         <Button
             android:id="@+id/button8"
@@ -113,7 +127,7 @@
             android:layout_column="2"
             android:text="8"
             android:textStyle="bold"
-            android:textSize="30dp" />
+            android:textSize="20dp" />
 
         <Button
             android:id="@+id/button9"
@@ -122,7 +136,7 @@
             android:layout_column="3"
             android:text="9"
             android:textStyle="bold"
-            android:textSize="30dp" />
+            android:textSize="20dp" />
     </TableRow>
 
     <TableRow
@@ -138,7 +152,7 @@
             android:text="OK"
             android:textColor="#2d8652"
             android:textStyle="bold"
-            android:textSize="30dp" />
+            android:textSize="20dp" />
 
         <Button
             android:id="@+id/button0"
@@ -147,7 +161,7 @@
             android:layout_column="2"
             android:text="0"
             android:textStyle="bold"
-            android:textSize="30dp" />
+            android:textSize="20dp" />
 
         <Button
             android:id="@+id/buttonCancel"
@@ -157,7 +171,7 @@
             android:text="C"
             android:textStyle="bold"
             android:textColor="#ff0d04"
-            android:textSize="30dp" />
+            android:textSize="20dp" />
     </TableRow>
 
 </TableLayout>

@@ -1,0 +1,11 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item android:id="@+id/order_new"
+        android:icon="@android:drawable/ic_menu_add"
+        android:showAsAction="always"
+        android:title="Новый заказ"/>
+
+    <item android:id="@+id/order_upload"
+        android:icon="@android:drawable/ic_menu_upload"
+        android:title="Выгрузить"/>
+</menu>

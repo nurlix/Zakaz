@@ -1,4 +1,4 @@
-package com.ulutsoft.cafe;
+package com.nurlan.zakaz;
 
 import org.junit.Test;
 
